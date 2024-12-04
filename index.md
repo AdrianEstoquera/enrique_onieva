@@ -1,0 +1,7 @@
+---
+layout: default
+title: "Enrique Onieva"
+---
+# Enrique Onieva Caracuel
+## Sobre mi...
+Enrique Onieva recibió la Ingeniería en Informática, Máster en Soft computing y sistemas inteligentes y el Doctorado en Informática por la Universidad de Granada, en 2006, 2008 y 2011, respectivamente. De 2007 a 2012, estuvo con el Programa AUTOPIA en el Centro de Automática y Robótica, del Consejo Superior de Investigaciones Científicas, Madrid. Durante 2012 estuvo con el grupo de Modelos de Decisión y Optimización, de la Universidad de Granada.Desde principios de 2013, forma parte de la unidad de investigación Mobility, del Instituto Tecnológico de Deusto (DeustoTech), donde lleva a cabo investigaciones de vanguardia en la aplicación de técnicas de soft computing en el campo de los sistemas de transporte inteligentes. Desde 2015, también es profesor en la Universidad de Deusto, impartiendo docencia relacionada con la Inteligencia Artificial y el Big Data.Ha participado en más de 20 proyectos de investigación y es autor de más de 100 artículos científicos. De ellos, más de 40 han sido publicados en revistas del más alto nivel. Su investigación ha sido reconocida y premiada varias veces en conferencias internacionales, y sus publicaciones obtienen un índice H de 16 (scopus.com).Actualmente, es uno de los investigadores más prolíficos en su área. Su interés de investigación se basa en la aplicación de Técnicas de Soft Computing a los Sistemas de Transporte Inteligentes, incluida la lógica difusa, el control y la optimización mediante técnicas evolutivas.

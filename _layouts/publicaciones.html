@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% include header.html %}
+    <main>
+            <!-- Columna izquierda: Enlaces a las publicaciones -->
+            <aside class="sidebar-left">
+                <h3>Enlaces a las publicaciones</h3>
+                <ul class="recent-posts">
+                    <li><a href="#cv">Curriculum Vitae</a></li>
+                    <li><a href="#Multi-head CNN–RNN for multi-time series anomaly detection: An industrial case study"> Multi-head CNN–RNN ...</a></li>
+                </ul>
+            </aside>
+
+        <section class="publicaciones-section">
+            <h1>{{ page.title }}</h1>
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </section>
+
+    <!-- Columna derecha: Redes sociales -->
+    <aside class="sidebar-right">
+        <h3>Conéctate conmigo</h3>
+        <ul class="social-links">
+            <li><a href="https://twitter.com/EnriqueOnieva" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/enriqueonieva/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://scholar.google.es/citations?user=2ww8fYYAAAAJ" target="_blank"><i class="fab fa-google"></i> Google Scholar</a></li>
+            <li><a href="mailto:enrique.onieva@deusto.es"><i class="fas fa-envelope"></i> Email</a></li>
+        </ul>
+    </aside>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

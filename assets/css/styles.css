@@ -1,0 +1,660 @@
+/* Estilo base: Mobile-first */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #dff0ff; /* Azul claro */
+}
+
+/* Estilo del header */
+header {
+    background-color: #007acc; /* Azul brillante */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav {
+    margin: 0.5rem 0;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    background-color: #ffffff;
+    color: #007acc;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+}
+
+/* Redes sociales */
+header div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Estilo base para los botones de redes sociales (solo icono) */
+header div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #007acc; /* Azul principal */
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 1.5rem;  /* Ajusta el tamaño de los iconos */
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Centrado del icono */
+header div a i {
+    display: inline-block;
+    margin: 0;  /* Elimina márgenes extra */
+    line-height: 1;  /* Ajusta la altura de la línea para que el icono esté centrado verticalmente */
+}
+
+/* Animación al pasar el cursor */
+header div a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos específicos para cada enlace */
+header div a.mailto {
+    background-color:  #af4c4c; /* Rojo oscuro para email */
+}
+
+header div a.twt {
+    background-color: #1da1f2; /* Azul de Twitter */
+}
+
+header div a.linkedin {
+    background-color: #dfeff8; /* Azul de LinkedIn */
+}
+
+header div a.gs {
+    background-color:#f78383; /* Rojo para Google Scholar */
+}
+
+
+/* main {
+    padding: 1rem;
+} */
+
+/*Perfil*/
+.profile-section {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.profile-section {
+    margin: 2rem 0;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+}
+
+.profile-text {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    color: #333333; /* Gris oscuro */
+    font-family: 'Georgia', serif; /* Fuente serifada para un estilo profesional */
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1.6; /* Mejora la legibilidad con un mayor interlineado */
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    border: 5px solid #007acc; /* Azul brillante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    object-fit: cover; /* Asegura que la imagen mantenga la proporción y cubra el área del círculo */
+    margin-bottom: 1rem;
+    margin-right: 1.5rem; 
+}
+
+.profile-section h1 {
+    font-size: 2rem;
+    color: #007acc; /* Azul brillante */
+}
+
+/* Contenedor de texto */
+/* Estilo específico para los párrafos dentro del contenedor .profile */
+.profile p {
+    width: 100%; /* El texto ocupa todo el ancho disponible */
+    margin: 0; /* Elimina márgenes innecesarios */
+    word-wrap: break-word; /* Hace que el texto se ajuste si es demasiado largo */
+    overflow: hidden; /* Elimina el desbordamiento del texto */
+}
+
+/* No afecta a h1 ni h2 */
+.profile h1,
+.profile h2 {
+    margin: 0; /* Si no deseas que tengan márgenes, puedes añadir esto */
+    padding: 0; /* Si no deseas rellenos, también puedes añadir esto */
+    /* Otros estilos para h1 y h2 pueden ir aquí si los necesitas */
+}
+
+/*Posts*/
+
+.posts-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.post-item {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Bordes más redondeados para un toque más suave */
+    padding: 2rem; /* Ampliar padding para mayor espacio */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Sombra más suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación de interacción */
+}
+
+.post-item h2 {
+    font-size: 2rem; /* Mayor tamaño de fuente para un encabezado más destacado */
+    color: #333333; /* Colocar un color más oscuro para el título */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+    font-weight: 600; /* Peso de fuente más prominente */
+}
+
+.post-item .post-date {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para la fecha */
+    color: #777777; /* Color más neutro para la fecha */
+    margin-bottom: 1.5rem; /* Mayor separación entre la fecha y el contenido */
+}
+
+.post-item .post-content {
+    font-size: 1.1rem; /* Aumentar ligeramente el tamaño del texto */
+    line-height: 1.8; /* Mejorar la altura de línea para mayor legibilidad */
+    color: #444444; /* Texto más oscuro para mayor contraste */
+    margin-bottom: 1.5rem; /* Separar más el texto del contenido de la imagen */
+}
+
+.post-item img {
+    max-height: 300px;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px; /* Bordes ligeramente más redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    margin-top: 1.5rem; /* Mayor espacio entre la imagen y el texto */
+    object-fit: cover; /* Asegura que las imágenes se ajusten bien */
+}
+/* Media Query para pantallas pequeñas */
+@media (max-width: 767px) {
+    .post-item img {
+        max-width: 100px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+        margin-top: 1rem; /* Reducir el espacio superior para optimizar espacio */
+    }
+
+    .post-item .post-content {
+        font-size: 1rem; /* Reducir ligeramente el tamaño del texto */
+    }
+}
+
+/*RRSS margen izq y posts margen derecha*/
+/* Contenedor principal de las tres columnas */
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Columna izquierda: Últimas publicaciones */
+.sidebar-left {
+    position: fixed;
+    left: 0;
+    top: 200px; 
+    width: 20%;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.sidebar-left h3 {
+    margin-top: 0;
+    color: #007acc;
+}
+
+.recent-posts {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-posts li {
+    margin-bottom: 0.5rem;
+}
+
+.recent-posts li a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.recent-posts li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Columna derecha: Redes sociales */
+.sidebar-right {
+    position: fixed;
+    right: 0;
+    top: 200px; 
+    width: 20%;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.sidebar-right h3 {
+    margin-top: 0;
+    color: #007acc;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.social-links i {
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para íconos de Font Awesome */
+.fab, .fas {
+    font-size: 1.5rem;
+    color: #007acc;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar-left, .sidebar-right {
+        position: relative;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .posts-section {
+        flex: 0 0 100%;
+    }
+}
+
+/*Publicaciones*/
+/* Contenedor principal de publicaciones */
+.publicaciones-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Fondo suave para simular un documento */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título principal de la sección */
+.publicaciones-section h1 {
+    font-size: 2.5rem;
+    color: #007acc; /* Azul principal */
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centrado */
+    font-weight: bold;
+}
+
+/* Estilo para los artículos individuales */
+.post-content {
+    padding: 1.5rem;
+    background-color: #ffffff; /* Fondo blanco para cada documento */
+    border: 1px solid #dfe1e5; /* Borde sutil entre documentos */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover para los artículos */
+.post-content:hover {
+    transform: translateY(-5px); /* Levantar el documento cuando se pasa el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+/* Títulos de los artículos */
+.post-content h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Lista de publicaciones */
+.post-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.post-content li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+/* Enlaces a las publicaciones en PDF */
+.post-content a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionales para los detalles del documento (fecha, autores, etc.) */
+.post-content .document-details {
+    font-size: 1rem;
+    color: #666666;
+    margin-top: 0.5rem;
+}
+
+.post-content .document-details span {
+    display: block;
+}
+
+/* Estilo para los botones de descarga de PDF */
+.post-content a.download-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.post-content a.download-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Estilo para los documentos con un encabezado destacado */
+.post-content .highlight {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #005bb5; /* Azul más oscuro */
+}
+/*Publicaciones*/
+/* Estilos generales para el contenido de la publicación */
+.publication {
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif para mayor legibilidad */
+    font-size: 1.1rem; /* Tamaño de texto adecuado para lectura */
+    line-height: 1.8; /* Espaciado entre líneas para mejor legibilidad */
+    color: #444444; /* Color de texto oscuro para mayor contraste */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 1.5rem;
+    width: 90%;
+    background-color: #fefeff;
+    border-radius: 12px; /* Redondear las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
+}
+
+.publication h1, .publication h2, .publication h3 {
+    font-family: 'Helvetica Neue', sans-serif; /* Fuente más destacada para los encabezados */
+    font-weight: 600; /* Títulos en negrita */
+    color: #333333; /* Títulos de color oscuro */
+    margin-bottom: 1.2rem; /* Espacio debajo de los encabezados */
+}
+
+.publication h1 {
+    font-size: 2.5rem; /* Título principal más grande */
+}
+
+.publication h2 {
+    font-size: 2rem; /* Subtítulo */
+}
+
+.publication h3 {
+    font-size: 1.5rem; /* Tercero en jerarquía */
+}
+
+.publication p {
+    margin-bottom: 1.5rem; /* Separación entre párrafos */
+    text-align: justify; /* Alineación justificada para mejorar la apariencia */
+}
+
+.publication ul, .publication ol {
+    margin-bottom: 1.5rem; /* Separación entre las listas y el resto del contenido */
+    padding-left: 2rem; /* Aumentar el margen izquierdo en listas */
+}
+
+.publication li {
+    margin-bottom: 0.5rem; /* Espacio entre elementos de la lista */
+}
+
+/* Estilo para palabras en negrita */
+.publication strong {
+    font-weight: 700; /* Asegurar que el texto en negrita se destaque más */
+    color: #007acc; /* Color para texto en negrita */
+}
+
+/* Estilo para enlaces */
+.publication a {
+    color: #007acc; /* Color azul para los enlaces */
+    text-decoration: none; /* Quitar subrayado predeterminado */
+    font-weight: 600; /* Enlaces más destacados */
+}
+
+.publication a:hover {
+    text-decoration: underline; /* Subrayar cuando se pase el ratón sobre el enlace */
+}
+
+/* Estilo para las imágenes */
+.publication img { 
+    max-height: 400px; 
+    width: auto;
+    display: block; /* Esto hace que la imagen sea un bloque y permita centrarla */
+    margin: 1.5rem auto; /* Espacio arriba y abajo, y centrar horizontalmente */
+    border-radius: 8px; /* Bordes redondeados para un estilo más suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Estilo para citas */
+.publication blockquote {
+    background-color: #f1f1f1; /* Fondo gris claro para las citas */
+    border-left: 4px solid #007acc; /* Línea vertical para destacar la cita */
+    padding: 1rem 2rem; /* Espacio alrededor de la cita */
+    font-style: italic; /* Citas en cursiva */
+    margin: 1.5rem 0; /* Separación de la cita con el resto del contenido */
+}
+
+/* Estilo para el código */
+.publication code {
+    background-color: #f8f8f8; /* Fondo gris claro para el código */
+    padding: 0.2rem 0.5rem; /* Espaciado alrededor del código */
+    border-radius: 4px; /* Bordes redondeados */
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    color: #d63384; /* Color del texto en el código */
+}
+
+/* Estilo para las tablas */
+.publication table {
+    width: 100%; /* Asegurar que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Evitar espacios entre las celdas */
+    margin-bottom: 1.5rem; /* Separación con el contenido siguiente */
+}
+
+.publication table, .publication th, .publication td {
+    border: 1px solid #e1e1e1; /* Borde de las celdas */
+}
+
+.publication th, .publication td {
+    padding: 1rem; /* Espaciado dentro de las celdas */
+    text-align: left; /* Alineación a la izquierda del texto */
+}
+
+.publication th {
+    background-color: #f8f9fa; /* Color de fondo para los encabezados de las tablas */
+    font-weight: bold; /* Encabezados en negrita */
+}
+
+/* Estilo para listas ordenadas */
+.publication ol {
+    list-style-type: decimal; /* Numeración en las listas */
+}
+
+
+
+/**************/
+/* Estilos para pantallas más grandes */
+@media (min-width: 600px) {
+    main {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 1024px;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .post h2 {
+        flex: 1;
+        font-size: 1.5rem;
+    }
+
+    .post p {
+        flex: 3;
+    }
+}
+@media (max-width: 767px) {
+    img {
+        max-height: 400px;
+        max-width: 100px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+        margin-top: 1rem; /* Reducir el espacio superior para optimizar espacio */
+    }
+}
+
+
+/*Footer*/
+/* Estilos generales para el footer */
+footer.footer {
+    background-color: #007acc; /* Azul brillante */
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+/* Contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Establece el ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 1rem;
+}
+
+/* Estilo del texto del copyright */
+footer .footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Estilo de los enlaces sociales */
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Estilo de cada enlace social */
+footer .social-links .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #007acc;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover en los enlaces sociales */
+footer .social-links .social-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos sociales */
+footer .social-links .social-link i {
+    margin: 0;
+}
