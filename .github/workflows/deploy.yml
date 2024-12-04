@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main  # Despliega cuando haya cambios en la rama principal
 
 jobs:
   deploy:
@@ -13,10 +13,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Ruby (para Jekyll, si lo usas)
+    - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.1'  # Ajusta esto si usas otra versión de Ruby
+        ruby-version: '3.3.6'  
 
     - name: Install dependencies
       run: |
@@ -25,10 +25,10 @@ jobs:
 
     - name: Build the site
       run: |
-        bundle exec jekyll build  # o cualquier comando de build si no usas Jekyll
+        bundle exec jekyll build  # Genera los archivos estáticos en `_site`
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site  # Jekyll coloca el sitio generado en la carpeta '_site'
+        publish_dir: ./_site  # Carpeta generada por Jekyll
