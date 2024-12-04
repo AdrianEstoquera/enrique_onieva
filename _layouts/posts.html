@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
     <title>{{ page.title }}</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
                         <h2>{{ post.title }}</h2>
                         <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
                         <!-- Enlace al post -->
-                        <p><a href="{{ post.url }}">Ir a la pagina</a></p>
+                        <p><a href="{{ site.baseurl }}/{{ post.url }}">Ir a la pagina</a></p>
                         <div class="post-content">
                             {{ post.content }}
                         </div>

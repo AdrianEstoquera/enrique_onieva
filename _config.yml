@@ -1,5 +1,5 @@
 title: Mi sitio en GitHub Pages
 description: Un sitio web generado con Jekyll
-baseurl: ""
-url: "https://enrique_onieva.github.io"
+baseurl: "/enrique_onieva"
+url: "https://adrianestoquera.github.io/"
 markdown: kramdown
